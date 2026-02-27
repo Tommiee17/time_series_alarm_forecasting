@@ -1,0 +1,41 @@
+/* Improve spacing rhythm for Quarto HTML output */
+
+.quarto-title-block {
+  margin-bottom: 3rem;
+}
+
+.content p {
+  margin-bottom: 1.4rem;
+  line-height: 1.85;
+}
+
+.content h1,
+.content h2,
+.content h3,
+.content h4 {
+  margin-top: 2.6rem;
+  margin-bottom: 1.1rem;
+}
+
+div.cell {
+  margin-top: 2.2rem;
+  margin-bottom: 2.2rem;
+}
+
+div.cell-output {
+  margin-top: 1.2rem;
+}
+
+.quarto-figure,
+figure {
+  margin-top: 1.8rem;
+  margin-bottom: 1.8rem;
+}
+
+ul,
+ol,
+blockquote,
+table {
+  margin-top: 1.4rem;
+  margin-bottom: 1.6rem;
+}

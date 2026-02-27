@@ -1,0 +1,50 @@
+% title.tex
+\makeatletter
+\renewcommand{\maketitle}{%
+  \begin{titlepage}
+    \thispagestyle{empty}
+    
+    % Logo top left
+    \noindent
+    \includegraphics[width=0.4\textwidth]{tu_wien_logo.jpg}
+
+    \vspace{4cm}
+
+    \begin{center}
+        % Top Rule (Thin)
+        \rule{\linewidth}{2pt} \\[2cm]
+        
+        % Main Title
+        {\huge \bfseries $title$ \par}
+        
+        \vspace{0.3cm}
+        
+        % Subtitle (Slightly smaller, but still bold)
+        $if(subtitle)$
+            {\LARGE \bfseries $subtitle$ \par}
+        $endif$
+        
+        % Bottom Rule (Thick)
+        \vspace{2cm}
+        \rule{\linewidth}{2pt} \\[2cm]
+
+        % Author and Supervisor information
+        {\large
+            \begin{tabular}{rl}
+                \textbf{Author:}     & $author$ \\[0.4cm]
+                $if(supervisor)$
+                \textbf{Supervisor:} & $supervisor$ \\
+                $endif$
+            \end{tabular}
+        \par}
+
+        \vfill 
+
+        % Date
+        {\large $date$ \par}
+    \end{center}
+  \end{titlepage}
+  \newpage
+  \setcounter{page}{1}
+}
+\makeatother
